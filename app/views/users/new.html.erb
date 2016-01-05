@@ -1,0 +1,10 @@
+<p class="lead">Sign Up</p>
+
+<%= bootstrap_form_for :user, url: "/users" do |f| %>
+
+	<%= f.text_field :name, :class => "formField" %>
+	<%= f.email_field :email, :class => "formField" %>
+	<%= f.password_field :password, :class => "formField" %>
+	<%= f.submit "Submit", :class => 'btn btn-default' %>
+	
+<% end %>

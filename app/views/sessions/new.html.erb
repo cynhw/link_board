@@ -1,0 +1,8 @@
+<p class="lead">Login</p>
+
+<%= bootstrap_form_for :user do |f| %>
+	<%= f.text_field :email, placeholder: "Enter Your Email",  :class => "formField"  %>
+	<%= f.password_field :password, placeholder: "Enter Your Password",  :class => "formField"  %>
+	<%= f.submit "Login", :class => 'btn btn-default' %>
+
+<% end %>
