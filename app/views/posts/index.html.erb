@@ -1,0 +1,11 @@
+<div class="panel">
+	<p><span class="glyphicon glyphicon glyphicon-pencil"></span> Share your favorite links.</p>
+</div>
+
+<h3>Posts</h3>
+
+<% @posts.each do |p| %>
+	<br>
+	<p class="lead"><%= link_to p.title, p.link %> | Posted By: <span class="username"><%= p.user.name %></span><br></p>
+	<hr>
+<% end %>

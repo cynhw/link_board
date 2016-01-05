@@ -2,19 +2,23 @@
 <html>
 <head>
   <title>LinkBoard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 
 
 <% if @current_user %>
 
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-			<p class="navbar-text text-center">Signed in as <strong><%= @current_user.email %></strong>   
+			<p class="navbar-text text-center">Signed in as <strong><%= @current_user.email %></strong>  
+			<%= link_to 'New Post',"/newpost", :class => 'btn btn-default'%> 
+			<%= link_to 'All Posts',"/", :class => 'btn btn-default'%> 
 			<%= link_to 'Logout',"/logout", :class => 'btn btn-default'%>  </p>
 		</div>
 	</nav>
@@ -31,7 +35,8 @@
 
 <% end %>
 
-<%= render "partials/flash" %>
+<%= render "partials/flash" %>	
+
 
 <div class="container">
 	<div class="well">

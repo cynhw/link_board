@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ .flash {
+ 	width: 800px;
+ 	margin: 0 auto;
+ 	border-radius: 10px;
+ }
+
+ body {
+ 	font-family: "Roboto";
+ 	font-size: 12px;
+ }
+
+a:link, a:visited {
+	color: #bf40bf;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 2px solid #bf40bf;
+}

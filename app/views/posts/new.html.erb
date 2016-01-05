@@ -1,0 +1,10 @@
+<div class="panel">
+	<p><span class="glyphicon glyphicon-question-sign"></span> We ask for at least a valid link that's not too short.</p>
+</div>
+
+<%= bootstrap_form_for @post, url: posts_path do |p| %>
+	<%= p.text_field :title %>
+	<%= p.text_field :link %>
+
+	<%= p.submit "Add Post", :class => 'btn btn-default' %>
+<% end %>

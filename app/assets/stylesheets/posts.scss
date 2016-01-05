@@ -1,0 +1,29 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+p {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.well {
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.navbar-text {
+	font-size: 14px;
+}
+
+.username {
+	color: #993399;
+	font-weight: 400;
+}
+
+.glyphicon-heart-empty {
+	color: pink;
+}
